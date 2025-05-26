@@ -1,0 +1,22 @@
+li a {
+    position: relative;
+}
+
+.navLink::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #1D40FE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navLink:hover.navLink::after {
+
+    width: 100%;
+
+}
