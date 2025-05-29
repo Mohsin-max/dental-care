@@ -15,14 +15,14 @@
     </ul>
 
     <div class="flex items-center gap-3">
-      <i class="ri-menu-3-line block lg:hidden text-2xl text-gray-700" (click)="toggleMenu()"></i>
+      <i [class]="!showHideMenu ? 'ri-menu-3-line block lg:hidden text-2xl text-gray-700' : 'ri-close-line block lg:hidden text-3xl text-red-600'" (click)="toggleMenu()"></i>
       <app-button class="hidden lg:block" label="Book Now"></app-button>
     </div>
   </div>
 
   <!-- Mobile Menu -->
-  <div class="w-full bg-white px-mobileXPad lg:hidden" *ngIf="showHideMenu">
-    <ul class="space-y-4 mb-4 text-lg pt-4 text-gray-700">
+  <div class="w-full h-screen bg-white px-mobileXPad lg:hidden" *ngIf="showHideMenu">
+    <ul class="space-y-4 mb-4 text-lg pt-10 text-gray-700">
       <li><a href="#" class="navLink">Home</a></li>
       <li><a href="#" class="navLink">About</a></li>
       <li><a href="#" class="navLink">Services</a></li>
