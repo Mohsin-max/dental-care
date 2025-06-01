@@ -1,1 +1,44 @@
-<p>case-stories works!</p>
+<section class="w-full bg-secondary text-white py-24">
+
+    <div class="top w-full flex flex-col md:flex-row justify-between md:items-end px-mobileXPad lg:px-desktopXPad">
+
+        <div class="space-y-4 w-full md:w-[60%] lg:w-[50%] mb-8 lg:mb-0">
+            <p class="tracking-widest">OUR CASE STORIES</p>
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">Patient Journeys to
+                <span class="text-primary">Healthier, Happier Smiles</span>
+            </h1>
+        </div>
+
+        <app-button label="Explore All Case Stories"></app-button>
+    </div>
+
+    <div class="bottom w-full h-[70%] flex flex-col sm:flex-row gap-10 justify-between pt-20 px-mobileXPad lg:px-desktopXPad">
+
+        <div class="w-full h-[250px] sm:h-[280px] md:h-[320px] lg:h-[400px] rounded-3xl overflow-hidden relative group" *ngFor="let details of cardsDetails">
+
+            <img src="{{details.image}}" alt="" class="w-full h-full">
+            <div class="absolute bottom-0 lg:bottom-[-100%] w-full h-full bg-gradient-to-t from-black/50 to-transparent lg:group-hover:bottom-0 duration-300"></div>
+
+            <div class="absolute lg:bottom-[-100%] bottom-0 p-2 lg:p-3 w-full lg:group-hover:bottom-0 duration-500">
+                <h2 class="text-xl md:text-2xl lg:text-3xl">{{details.heading}}</h2>
+
+                    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-6">
+
+                        <div class="flex items-center gap-1 text-xs lg:text-sm">
+                            <p class="border px-2 py-0.5 rounded-full">{{details.tag1}}</p>
+                            <p class="border px-2 py-0.5 rounded-full">{{details.tag2}}</p>
+                            <p class="border px-2 py-0.5 rounded-full">{{details.tag3}}</p>
+                        </div>
+
+                        <div class="w-full lg:w-fit text-center bg-primary p-2 rounded-full cursor-pointer mt-3 lg:mt-0">
+                            <i class="ri-arrow-right-up-line text-2xl lg:text-4xl"></i>
+                        </div>  
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
