@@ -9,11 +9,12 @@ import { OurServicesComponent } from "./components/our-services/our-services.com
 import { WhyUsComponent } from "./components/why-us/why-us.component";
 import { CaseStoriesComponent } from "./components/case-stories/case-stories.component";
 import { HowItWorksComponent } from "./components/how-it-works/how-it-works.component";
+import { BookAppointmentComponent } from "./components/book-appointment/book-appointment.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent],
+  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

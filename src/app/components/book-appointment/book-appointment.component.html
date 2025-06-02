@@ -1,1 +1,154 @@
-<p>book-appointment works!</p>
+<section class="w-full flex flex-col lg:flex-row px-mobileXPad lg:px-desktopXPad py-24 bg-[#F6F6F6]">
+
+    <!-- LEFT -->
+
+    <div class="left w-full lg:w-[60%] h-full">
+
+        <!-- TOP -->
+
+        <div class="space-y-4 mb-20 w-full lg:w-[90%]">
+            <p class="tracking-widest">BOOK AN APPOINTMENT</p>
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium"><span class="text-primary">Effortless Online Booking</span>
+                for Your Dental Visit</h1>
+        </div>
+
+        <!-- BOTTOM -->
+
+        <form class="space-y-8">
+
+            <!-- 1 -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div class="flex flex-col h-16">
+                    <label for="name" class="text-secondary">Your Name *</label>
+                    <input type="text" placeholder="Ex. Jhon Doe" id="name"
+                        class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary">
+                </div>
+
+                <div class="flex flex-col h-16">
+                    <label for="phone" class="text-secondary">Phone Number *</label>
+                    <input type="number" placeholder="Enter Phone Number" id="phone"
+                        class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary">
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div class="flex flex-col h-16">
+                    <label for="Appointment" class="text-secondary">Type of Appointment *</label>
+                    <select id="Appointment"
+                        class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary">
+
+                        <option value="">Select</option>
+
+                    </select>
+                </div>
+
+                <div class="flex flex-col h-16">
+                    <label for="Dentist" class="text-secondary">Preferred Dentist *</label>
+                    <select id="Dentist"
+                        class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary">
+
+                        <option value="">Dr. David Brown</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div class="flex flex-col h-16">
+                    <label for="Date" class="text-secondary">Preferred Date *</label>
+                    <input type="date" class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary"
+                        id="Date">
+                </div>
+
+                <div class="flex flex-col h-16">
+                    <label for="Time" class="text-secondary">Preferred Time *</label>
+                    <input type="time" class="w-full h-full rounded-lg ps-3 outline-none focus:border-2 border-primary"
+                        id="Time">
+                </div>
+
+            </div>
+
+            <div>
+
+                <label for="Notes" class="text-secondary">Special Texts or Notes *</label>
+
+                <textarea name="" id="Notes"
+                    class="w-full h-44 rounded-lg p-3 outline-none focus:border-2 border-primary"
+                    placeholder="Enter Here.."></textarea>
+
+            </div>
+
+            <div class="mt-10">
+
+                <app-button label="Book an Appointment"></app-button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right w-full lg:w-[40%] h-full lg:ps-14 space-y-14 pt-20">
+
+        <p class="text-paraColor text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud.
+        </p>
+
+        <div class="w-[100%] h-52 bg-primary rounded-xl p-5 text-white">
+
+            <div class="border-b border-white/60 pb-4">
+                <p>Clinic Hours</p>
+            </div>
+
+            <div class="space-y-3 mt-5">
+
+                <div class="flex justify-between">
+                    <p>Monday to Friday</p>
+                    <p>09:00-22:00</p>
+                </div>
+
+                <div class="flex justify-between">
+                    <p>Saturday</p>
+                    <p>11:00-20:00</p>
+                </div>
+
+                <div class="flex justify-between">
+                    <p>Sunday</p>
+                    <p>Closed</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-[100%] bg-white flex items-center gap-5 px-4 md:px-7 py-5 rounded-xl">
+
+            <i class="ri-phone-line text-4xl bg-primary text-white p-2 rounded-full"></i>
+
+            <div class="space-y-1">
+                <p class="text-sm text-paraColor">Your Smile, Our Priority</p>
+                <h2 class="text-xl md:text-2xl font-medium">24/7 Emergency</h2>
+                <p class="text-sm text-paraColor">(000) 000-0000</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</section>
