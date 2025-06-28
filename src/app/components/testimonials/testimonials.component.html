@@ -1,1 +1,47 @@
-<p>testimonials works!</p>
+<section class="w-full py-10 bg-secondary px-mobileXPad lg:px-desktopXPad">
+
+  <div class="text-center text-white space-y-5 mb-20">
+    <p class="tracking-widest">TESTIMONIALS</p>
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium">What Our <span class="text-primary">Patients Have to Say</span></h1>
+  </div>
+
+
+  <!-- REVIEW CARDS -->
+  <div class="owl-carousel owl-theme">
+
+    <!-- CARD -->
+    <div class="item w-[100%] bg-white p-4 rounded-xl shadow space-y-4" *ngFor="let review of reviewArr">
+
+      <!-- 1 -->
+      <div class="flex items-center gap-2">
+        <img src="stars.png" style="width: 150px;" />
+        <p class="text-lg">5.0</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="space-y-3">
+        <h1 class="text-lg font-semibold">{{review.title}}</h1>
+
+        <p class="text-gray-500 text-sm">{{review.desc}}</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full overflow-hidden">
+
+          <img [src]="review.image" alt="">
+
+        </div>
+
+        <div>
+          <h2 class="font-medium">{{review.clientName}}</h2>
+          <p class="text-sm text-gray-500">{{review.clientReview}}</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+div[style*='--handle-position'] {
+  --handle-position: 0px;
+}
+
+div[style*='--handle-position'] > div {
+  height: 100%;
+  transform: translateX(var(--handle-position));
+}

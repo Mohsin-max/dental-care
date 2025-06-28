@@ -1,5 +1,7 @@
-<header class="w-full bg-white flex justify-between items-center px-mobileXPad lg:px-desktopXPad py-3 sticky top-0 z-50 flex-col lg:flex-row">
-
+<header
+  class="w-full bg-white flex justify-between items-center px-mobileXPad lg:px-desktopXPad py-3 sticky top-0 z-50 flex-col lg:flex-row transition-all duration-300"
+  [ngClass]="{ '-top-24': hideNavbar, 'top-0': !hideNavbar }"
+>
   <!-- Top Row (Logo + Nav + Button) -->
   <div class="w-full flex justify-between items-center">
     <a href="#"><img src="logo.png" class="w-32 md:w-40 lg:w-44" alt="Logo"></a>
