@@ -1,1 +1,50 @@
-<p>our-team works!</p>
+<section class="w-full bg-[#F6F6F6] px-mobileXPad lg:px-desktopXPad py-20">
+
+    <div class="top text-center flex flex-col items-center">
+
+        <p class="tracking-widest">OUR TEAM</p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl text-secondary font-medium w-full lg:w-[40%] mt-5">Meet Our <span
+                class="text-primary">Expert
+                Dental Specialists</span></h1>
+
+    </div>
+
+    <div class="bottom flex justify-center mt-16">
+
+        <!-- CARD CONTAINER-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-40">
+
+            <!-- CARD -->
+            <div
+                class="card w-[280px] h-[330px] bg-white overflow-hidden rounded-2xl hover:border-b-8 border-primary hover:-mt-3 group duration-200"
+                *ngFor="let item of cardDetails"
+                >
+
+                <div class="w-full h-[78%] overflow-hidden relative">
+                    <img [src]="item.image" alt="" class="w-full h-full object-cover object-top">
+                    <div
+                        class="flex justify-center items-end absolute bottom-0 lg:bottom-[-100%] w-full h-full bg-gradient-to-t from-black/30 to-transparent lg:group-hover:bottom-0 duration-300">
+                        <div class="text-white text-2xl space-x-4 mb-3">
+                            <a href=""><i class="ri-facebook-circle-fill border-2 p-1 rounded-full"></i></a>
+                            <a href=""><i class="ri-twitter-x-fill border-2 p-1 rounded-full"></i></a>
+                            <a href=""><i class="ri-pinterest-fill border-2 p-1 rounded-full"></i></a>
+                            <a href=""><i class="ri-instagram-line border-2 p-1 rounded-full"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full h-[22%] px-4 flex flex-col justify-center">
+
+                    <h2 class="text-lg font-medium">{{item.docName}}</h2>
+                    <p class="text-sm text-gray-500">{{item.docProf}}</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
