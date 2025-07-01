@@ -14,11 +14,12 @@ import { WatchVideoComponent } from "./components/watch-video/watch-video.compon
 import { TestimonialsComponent } from "./components/testimonials/testimonials.component";
 import { BeforeAfterComponent } from "./components/before-after/before-after.component";
 import { OurTeamComponent } from "./components/our-team/our-team.component";
+import { ArticlesComponent } from "./components/articles/articles.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent],
+  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent, ArticlesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

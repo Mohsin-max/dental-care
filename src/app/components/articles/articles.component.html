@@ -1,1 +1,58 @@
-<p>articles works!</p>
+<section class="w-full bg-[#f6f6f6] px-mobileXPad lg:px-desktopXPad py-20">
+
+    <div class="top flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between lg:items-end">
+
+        <div class="w-full lg:w-[35%]">
+            <p class="tracking-widest">OUR LATEST ARTICLES</p>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium mt-5 text-secondary">Our Latest
+                <span class="text-primary">News & Blog Articles</span>
+            </h1>
+        </div>
+
+        <app-button label="View All Blogs"></app-button>
+
+    </div>
+
+
+    <div class="bottom flex justify-center mt-16">
+
+        <!-- CARD CONTAINER-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-40">
+
+            <!-- CARD -->
+            <div class="w-[280px] h-[380px] bg-white rounded-xl overflow-hidden shadow-xl  hover:border-b-8 border-primary hover:-mt-3 duration-200" *ngFor="let item of cardDetails">
+
+                <div class="w-full h-[50%] relative">
+
+                    <img [src]="item.image" alt="" class="w-full h-full object-cover">
+
+                    <div class="bg-primary text-white p-1 absolute bottom-0 rounded-e-md">
+
+                        <p class="text-sm">Dental Care Tips</p>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full h-[50%] ps-3 pe-2 flex flex-col justify-center gap-2">
+
+                    <p class="text-sm text-gray-500"><i class="ri-calendar-event-fill text-primary"></i> {{item.date}}
+                    </p>
+
+                    <h2 class="font-medium text-md">{{item.title}}</h2>
+
+                    <p class="text-xs text-gray-500">{{item.desc}}</p>
+
+                        <a href="" class="text-primary text-sm">Read More <i class="ri-arrow-right-line"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</section>
