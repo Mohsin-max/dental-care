@@ -15,11 +15,14 @@ import { TestimonialsComponent } from "./components/testimonials/testimonials.co
 import { BeforeAfterComponent } from "./components/before-after/before-after.component";
 import { OurTeamComponent } from "./components/our-team/our-team.component";
 import { ArticlesComponent } from "./components/articles/articles.component";
+import { FaqComponent } from "./components/faq/faq.component";
+import { FollowUsComponent } from "./components/follow-us/follow-us.component";
+import { NewsLetterComponent } from "./components/news-letter/news-letter.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent, ArticlesComponent],
+  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent, ArticlesComponent, FaqComponent, FollowUsComponent, NewsLetterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
