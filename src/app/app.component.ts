@@ -18,11 +18,12 @@ import { ArticlesComponent } from "./components/articles/articles.component";
 import { FaqComponent } from "./components/faq/faq.component";
 import { FollowUsComponent } from "./components/follow-us/follow-us.component";
 import { NewsLetterComponent } from "./components/news-letter/news-letter.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent, ArticlesComponent, FaqComponent, FollowUsComponent, NewsLetterComponent],
+  imports: [RouterOutlet, TopHeaderComponent, HeaderComponent, HeroComponent, AboutComponent, ScrollingTextComponent, OurServicesComponent, WhyUsComponent, CaseStoriesComponent, HowItWorksComponent, BookAppointmentComponent, WatchVideoComponent, TestimonialsComponent, BeforeAfterComponent, OurTeamComponent, ArticlesComponent, FaqComponent, FollowUsComponent, NewsLetterComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
